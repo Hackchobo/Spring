@@ -29,6 +29,7 @@ public class BoardService {
         dto.setStartIdx(startIdx);
         return mapper.selBoardAll(dto);
     }
+    // lkjsdlkfjsfl
 
     public BoardDetailVo selBoardById(BoardDto dto) {
         return mapper.selBoardById(dto);
