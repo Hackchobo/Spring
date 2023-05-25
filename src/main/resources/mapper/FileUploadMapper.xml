@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.green.board7.fileupload.FileUploadMapper">
+    <insert id="insFile">
+        insert into t_file
+        (path, uploader, level_value)
+        value
+        (#{path}, #{uploader}, #{levelValue})
+    </insert>
+
+    <select id="selFileById" resultType="FileEntity">
+        select * from t_file
+        where ifile = #{ifile}
+    </select>
+</mapper>
